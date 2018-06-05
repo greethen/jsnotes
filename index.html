@@ -28,7 +28,7 @@
     <form action="">
         <label>
             Header:
-            <input type="text" name="header" id="form_header">
+            <input required minlength="2" maxlength="50" type="text" name="header" id="form_header" placeholder="Your header here">
         </label>
         <label>
             Description:
@@ -48,6 +48,20 @@
         </article>
     </template>
 
+    <template id="editFormTemplate">
+            <form action="">
+                    <label>
+                        Header:
+                        <input required minlength="2" maxlength="50" type="text" name="header"  placeholder="Your header here">
+                    </label>
+                    <label>
+                        Description:
+                        <textarea name="description" cols="30" rows="10"></textarea>
+                    </label>
+                    <input type="submit" value="Add to google">
+                </form>
+            
+    </template>
 
     <script src="main.js"></script>
     <!-- <script src="test.js"></script> -->
